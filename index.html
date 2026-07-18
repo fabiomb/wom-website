@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WOM — Warriors of Metal | Juego de estrategia por turnos, open source</title>
+  <meta name="description" content="Warriors of Metal (WOM): juego de estrategia militar 2D por turnos, gratis y open source. Mapas aleatorios, batallas en tiempo real, multijugador LAN/online y hasta un LLM como rival. Windows, Linux y macOS.">
+  <link rel="canonical" href="https://wom.fabio.com.ar/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WOM — Warriors of Metal">
+  <meta property="og:title" content="WOM — Warriors of Metal">
+  <meta property="og:description" content="Juego de estrategia militar 2D por turnos, gratis y open source. Mapas aleatorios, batallas en tiempo real, multijugador LAN/online y hasta un LLM como rival. Turn-based strategy for Windows, Linux & macOS.">
+  <meta property="og:url" content="https://wom.fabio.com.ar/">
+  <meta property="og:image" content="https://wom.fabio.com.ar/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Warriors of Metal — arte del juego">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WOM — Warriors of Metal">
+  <meta name="twitter:description" content="Juego de estrategia militar 2D por turnos, gratis y open source, para Windows, Linux y macOS. Free & open source turn-based strategy game.">
+  <meta name="twitter:image" content="https://wom.fabio.com.ar/assets/img/og-image.jpg">
+
+  <!-- Icons -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#160b18">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "WOM — Warriors of Metal",
+    "url": "https://wom.fabio.com.ar/",
+    "image": "https://wom.fabio.com.ar/assets/img/og-image.jpg",
+    "description": "Juego de estrategia militar 2D por turnos, gratis y open source: mapas aleatorios, batallas en tiempo real, multijugador LAN/online y jugador LLM.",
+    "genre": ["Strategy", "Turn-based strategy"],
+    "gamePlatform": ["Windows", "Linux", "macOS"],
+    "operatingSystem": "Windows 10+, Linux, macOS 12+",
+    "applicationCategory": "Game",
+    "playMode": ["SinglePlayer", "MultiPlayer"],
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "author": { "@type": "Person", "name": "Fabio Baccaglioni", "email": "fabiomb@gmail.com" },
+    "license": "https://www.gnu.org/licenses/old-licenses/gpl-2.0.html",
+    "downloadUrl": "https://github.com/fabiomb/WOM/releases"
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="#top" class="brand">WOM</a>
+    <nav class="site-nav" id="site-nav">
+      <a href="#features" data-i18n="nav.features">El juego</a>
+      <a href="#screenshots" data-i18n="nav.screenshots">Capturas</a>
+      <a href="#multiplayer" data-i18n="nav.multiplayer">Multijugador</a>
+      <a href="#download" data-i18n="nav.download">Descargar</a>
+      <a href="#requirements" data-i18n="nav.requirements">Requisitos</a>
+      <a href="#contribute" data-i18n="nav.contribute">Colaborar</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switch" role="group" aria-label="Language / Idioma">
+        <button type="button" data-lang="es" class="lang-btn active" aria-pressed="true">ES</button>
+        <button type="button" data-lang="en" class="lang-btn" aria-pressed="false">EN</button>
+      </div>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-content">
+      <p class="hero-kicker" data-i18n="hero.kicker">Gratis · Open source · Windows, Linux y macOS</p>
+      <h1 class="hero-title">Warriors <span>of</span> Metal</h1>
+      <p class="hero-tagline" data-i18n="hero.tagline">Estrategia militar 2D por turnos: conquistá un mapa generado al azar, dirigí batallas en tiempo real y enfrentate a la IA, a otros humanos… o a un modelo de lenguaje.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="https://github.com/fabiomb/WOM/releases/latest" target="_blank" rel="noopener">
+          <span data-i18n="hero.download">Descargar</span> <small class="ver">v0.8.1</small>
+        </a>
+        <a class="btn btn-ghost" href="https://github.com/fabiomb/WOM" target="_blank" rel="noopener" data-i18n="hero.github">Ver en GitHub</a>
+      </div>
+      <p class="hero-platforms" data-i18n="hero.platforms">Windows · Linux · macOS (Apple Silicon) — hecho en Python + pygame-ce, licencia GPL-2.0</p>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section" id="features">
+    <div class="container">
+      <h2 class="section-title" data-i18n="features.title">El juego</h2>
+      <p class="section-lead" data-i18n="features.lead">Cada partida es un mapa nuevo, la misma seed es la misma guerra: todo el azar es determinista, del terreno a la última flecha.</p>
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-icon">🗺️</div>
+          <h3 data-i18n="features.map.title">Mapa aleatorio coherente</h3>
+          <p data-i18n="features.map.text">Cadenas montañosas, bosques en manchas, lagos y ríos con vados. Misma seed, mismo mapa — y misma partida completa.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">⚔️</div>
+          <h3 data-i18n="features.units.title">Cuatro clases de unidad</h3>
+          <p data-i18n="features.units.text">Partisano, soldado, caballero y arquero: piedra-papel-tijera entre clases y bonus de terreno. Los arqueros ignoran la defensa de los fuertes.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">🌾</div>
+          <h3 data-i18n="features.economy.title">Economía de guerra</h3>
+          <p data-i18n="features.economy.text">Los pueblos producen comida y los fuertes la convierten en tropas de reserva, que salen al mapa cuando creás o reabastecés un ejército.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">🔥</div>
+          <h3 data-i18n="features.battle.title">Zoom de batalla en tiempo real</h3>
+          <p data-i18n="features.battle.text">Auto-resolvé el choque o dirigilo en un mini-RTS: elegí formación de despliegue y da órdenes en vivo, en campo abierto o asaltando un fuerte. También en multijugador.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3 data-i18n="features.ai.title">Tres niveles de IA</h3>
+          <p data-i18n="features.ai.text">Fácil, medio y difícil sobre un mismo motor de scoring de objetivos, balanceados por simulación masiva de partidas.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">🏁</div>
+          <h3 data-i18n="features.victory.title">Tres modos de victoria</h3>
+          <p data-i18n="features.victory.text">Conquista total, captura de banderas o límite de turnos: elegí cómo se gana antes de empezar.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h3 data-i18n="features.mp.title">Multijugador de 2 a 4</h3>
+          <p data-i18n="features.mp.text">Por LAN o por Internet con servidor dedicado: lobby con chat, varias partidas a la vez, reconexión y chat en partida.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">🧠</div>
+          <h3 data-i18n="features.llm.title">Un LLM como rival</h3>
+          <p data-i18n="features.llm.text">Gemini, Claude, ChatGPT o modelos locales (Ollama, LM Studio) pueden ocupar un lugar en la partida y jugar como un cliente de red más.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">🎵</div>
+          <h3 data-i18n="features.music.title">Banda sonora y animaciones</h3>
+          <p data-i18n="features.music.text">Tropas animadas en mapa y batalla, movimiento en tres fases y reproductor de música configurable dentro del juego.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon">💾</div>
+          <h3 data-i18n="features.saves.title">Guardado exacto</h3>
+          <p data-i18n="features.saves.text">Partidas guardadas en JSON: una partida cargada continúa exactamente igual, generador de azar incluido.</p>
+        </article>
+      </div>
+
+      <div class="units-strip">
+        <h3 data-i18n="units.title">Las cuatro clases</h3>
+        <div class="units-row">
+          <figure><img src="assets/img/unit-partisano.png" alt="Partisano" width="144" height="144" loading="lazy"><figcaption data-i18n="units.partisan">Partisano</figcaption></figure>
+          <figure><img src="assets/img/unit-soldado.png" alt="Soldado" width="144" height="144" loading="lazy"><figcaption data-i18n="units.soldier">Soldado</figcaption></figure>
+          <figure><img src="assets/img/unit-caballero.png" alt="Caballero" width="144" height="144" loading="lazy"><figcaption data-i18n="units.knight">Caballero</figcaption></figure>
+          <figure><img src="assets/img/unit-arquero.png" alt="Arquero" width="144" height="144" loading="lazy"><figcaption data-i18n="units.archer">Arquero</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section class="section section-alt" id="screenshots">
+    <div class="container">
+      <h2 class="section-title" data-i18n="shots.title">Capturas</h2>
+      <div class="shots-grid">
+        <figure class="shot"><img src="assets/img/shot-m2.webp" alt="" data-i18n-alt="shots.map" width="1280" height="720" loading="lazy"><figcaption data-i18n="shots.map">Partida sobre el mapa generado</figcaption></figure>
+        <figure class="shot"><img src="assets/img/shot-batalla.webp" alt="" data-i18n-alt="shots.battle" width="1280" height="720" loading="lazy"><figcaption data-i18n="shots.battle">Zoom de batalla en tiempo real</figcaption></figure>
+        <figure class="shot"><img src="assets/img/shot-multiplayer.webp" alt="" data-i18n-alt="shots.mp" width="1280" height="720" loading="lazy"><figcaption data-i18n="shots.mp">Partida multijugador con chat</figcaption></figure>
+        <figure class="shot"><img src="assets/img/shot-menu_main.webp" alt="" data-i18n-alt="shots.menu" width="1280" height="720" loading="lazy"><figcaption data-i18n="shots.menu">Menú principal</figcaption></figure>
+        <figure class="shot"><img src="assets/img/shot-menu_new.webp" alt="" data-i18n-alt="shots.new" width="1280" height="720" loading="lazy"><figcaption data-i18n="shots.new">Nueva partida</figcaption></figure>
+        <figure class="shot"><img src="assets/img/shot-multiplayer_lobby.webp" alt="" data-i18n-alt="shots.lobby" width="1280" height="720" loading="lazy"><figcaption data-i18n="shots.lobby">Crear partida en red</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- MULTIPLAYER / LLM -->
+  <section class="section" id="multiplayer">
+    <div class="container split">
+      <div class="split-text">
+        <h2 class="section-title" data-i18n="mp.title">Multijugador serio</h2>
+        <p data-i18n="mp.p1">De 2 a 4 jugadores por red local o por Internet con un servidor dedicado: lobby con chat global, catálogo de partidas simultáneas y reconexión si te caés (la IA cubre tu lugar mientras tanto).</p>
+        <p data-i18n="mp.p2">Bajo el capó es lockstep determinista: ambos clientes simulan el mismo turno con las mismas órdenes y seed, así que por la red solo viajan las órdenes. El servidor es un proceso stand-alone de solo stdlib, con rate-limit y protección anti-DDOS.</p>
+        <h3 data-i18n="mp.llmTitle">¿Y contra una IA de verdad?</h3>
+        <p data-i18n="mp.llmText">Conectá un modelo de lenguaje como rival: observa el tablero como ASCII, planifica y emite órdenes de alto nivel. Sirve para medir qué modelo juega mejor a la estrategia — local u online, sin SDKs externos.</p>
+      </div>
+      <div class="split-media">
+        <img src="assets/img/shot-multiplayer.webp" alt="" data-i18n-alt="shots.mp" width="1280" height="720" loading="lazy">
+        <img src="assets/img/shot-batalla.webp" alt="" data-i18n-alt="shots.battle" width="1280" height="720" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section class="section section-alt" id="download">
+    <div class="container">
+      <h2 class="section-title" data-i18n="dl.title">Descargar</h2>
+      <p class="section-lead" data-i18n="dl.lead">Gratis, sin instalador y portable: descomprimí y jugá. Los guardados y la configuración se crean junto al ejecutable.</p>
+      <div class="dl-grid">
+        <a class="dl-card" data-platform="windows" href="https://github.com/fabiomb/WOM/releases/latest" target="_blank" rel="noopener">
+          <div class="dl-os">🪟 Windows</div>
+          <div class="dl-file">wom-v0.8.1-windows.zip</div>
+          <div class="dl-note" data-i18n="dl.win">Windows 10 u 11, 64 bits</div>
+        </a>
+        <a class="dl-card" data-platform="linux" href="https://github.com/fabiomb/WOM/releases/latest" target="_blank" rel="noopener">
+          <div class="dl-os">🐧 Linux</div>
+          <div class="dl-file">wom-v0.8.1-linux.tar.gz</div>
+          <div class="dl-note" data-i18n="dl.linux">Distros 64 bits actuales</div>
+        </a>
+        <a class="dl-card" data-platform="macos" href="https://github.com/fabiomb/WOM/releases/latest" target="_blank" rel="noopener">
+          <div class="dl-os">🍎 macOS</div>
+          <div class="dl-file">wom-v0.8.1-macos-arm64.tar.gz</div>
+          <div class="dl-note" data-i18n="dl.mac">Apple Silicon (M1 o superior)</div>
+        </a>
+      </div>
+      <p class="dl-all"><a href="https://github.com/fabiomb/WOM/releases/" target="_blank" rel="noopener" data-i18n="dl.all">Todas las versiones y changelogs en GitHub Releases →</a></p>
+    </div>
+  </section>
+
+  <!-- REQUIREMENTS -->
+  <section class="section" id="requirements">
+    <div class="container">
+      <h2 class="section-title" data-i18n="req.title">Requisitos</h2>
+      <p class="section-lead" data-i18n="req.lead">WOM es un juego 2D liviano: si tu máquina abre un navegador, corre WOM.</p>
+      <div class="req-grid">
+        <div class="req-card">
+          <h3 data-i18n="req.hwTitle">Hardware mínimo</h3>
+          <ul>
+            <li data-i18n="req.hw1">CPU de dos núcleos (x86-64 o Apple Silicon)</li>
+            <li data-i18n="req.hw2">2 GB de RAM</li>
+            <li data-i18n="req.hw3">500 MB de espacio en disco</li>
+            <li data-i18n="req.hw4">Pantalla de 1280×720 — no requiere GPU dedicada</li>
+            <li data-i18n="req.hw5">Mouse (rueda para zoom) y teclado</li>
+            <li data-i18n="req.hw6">Conexión de red solo para multijugador</li>
+          </ul>
+        </div>
+        <div class="req-card">
+          <h3 data-i18n="req.swTitle">Software</h3>
+          <ul>
+            <li data-i18n="req.sw1">Windows 10/11 de 64 bits</li>
+            <li data-i18n="req.sw2">Linux de 64 bits (glibc reciente)</li>
+            <li data-i18n="req.sw3">macOS 12+ en Apple Silicon</li>
+            <li data-i18n="req.sw4">Los binarios no necesitan nada más: Python y las dependencias van incluidos</li>
+            <li data-i18n="req.sw5">Desde el código fuente: Python 3.13 + pygame-ce</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTRIBUTE -->
+  <section class="section section-alt" id="contribute">
+    <div class="container">
+      <h2 class="section-title" data-i18n="dev.title">Participá del desarrollo</h2>
+      <p class="section-lead" data-i18n="dev.lead">WOM es software libre (GPL-2.0), escrito en Python 3.13 con pygame-ce y con una arquitectura en capas estricta: la lógica del juego no importa pygame — y hay un test que lo verifica.</p>
+      <div class="dev-grid">
+        <div class="dev-card">
+          <h3 data-i18n="dev.codeTitle">Corré el código</h3>
+          <pre><code>git clone https://github.com/fabiomb/WOM.git
+cd WOM
+python -m venv .venv
+.venv/bin/pip install -r requirements.txt
+.venv/bin/python main.py</code></pre>
+          <p data-i18n="dev.codeText">La suite de tests corre con pytest y el balance de la IA se valida con simulación masiva de partidas por consola.</p>
+        </div>
+        <div class="dev-card">
+          <h3 data-i18n="dev.helpTitle">Cómo ayudar</h3>
+          <ul>
+            <li data-i18n="dev.help1">Reportá bugs o ideas en los issues de GitHub</li>
+            <li data-i18n="dev.help2">Enviá pull requests: balance, IA, red, UI o arte</li>
+            <li data-i18n="dev.help3">El arte se reemplaza soltando archivos del mismo nombre y tamaño en data/assets/</li>
+            <li data-i18n="dev.help4">Todo el balance vive en JSON editable (clases, batalla, IA)</li>
+            <li data-i18n="dev.help5">Documentación técnica completa en docs/</li>
+          </ul>
+          <a class="btn btn-primary" href="https://github.com/fabiomb/WOM" target="_blank" rel="noopener" data-i18n="dev.cta">Ir al repositorio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 Fabio Baccaglioni · <span data-i18n="footer.license">Licencia GPL-2.0</span></p>
+    <p>
+      <a href="https://github.com/fabiomb/WOM" target="_blank" rel="noopener">GitHub</a> ·
+      <a href="https://github.com/fabiomb/WOM/releases/" target="_blank" rel="noopener" data-i18n="footer.releases">Descargas</a> ·
+      <a href="https://github.com/fabiomb/WOM/issues" target="_blank" rel="noopener">Issues</a>
+    </p>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" hidden>
+  <button type="button" class="lightbox-close" aria-label="Cerrar">✕</button>
+  <img alt="">
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
