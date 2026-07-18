@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://wom.fabio.com.ar/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://wom.fabio.com.ar/assets/img/og-image.jpg</image:loc>
+      <image:title>WOM — Warriors of Metal</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://wom.fabio.com.ar/assets/img/shot-m2.webp</image:loc>
+      <image:title>Partida sobre el mapa generado</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://wom.fabio.com.ar/assets/img/shot-batalla.webp</image:loc>
+      <image:title>Zoom de batalla en tiempo real</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://wom.fabio.com.ar/assets/img/shot-multiplayer.webp</image:loc>
+      <image:title>Partida multijugador con chat</image:title>
+    </image:image>
+  </url>
+</urlset>
